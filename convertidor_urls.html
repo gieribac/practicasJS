@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Utilidades_Conv_Url</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	
+</head>
+<body>
+	<h1>Convertidor de URLs</h1>
+    <button onclick=f1()> De barra inversa a barra </button>
+    <button onclick=f2()> De barra a barra inversa </button>
+    <script>
+        //F:\backup170521\ADocuments\01_MisionTIC\ciclo4\final\doctorPatitas\Z\doctorPatitas\backEnd\crud_doctorPatitas\src\main\java\com\bd\doctorPatitas\crud_doctorPatitas\CrudDoctorPatitasApplication.java
+        const f1 = () => {
+            const p = prompt('Url:').replace(":","");
+            alert("/"+p.replace(/\\/g,"/")); //devuelve añadiendo un "/" inicial
+        }
+        const f2 = () => {
+            const p = prompt('Url:').slice(1);
+            alert(p.replace(/\//g,"\\")); //devuelve quitando el "\" inicial
+        }
+
+    </script>
+</body>
+
+</html>
